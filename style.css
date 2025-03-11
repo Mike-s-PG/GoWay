@@ -1,0 +1,167 @@
+ /* estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb; /* Fondo claro */
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Menú Lateral */
+.sidebar {
+    width: 250px;
+    background-color: #1a1c23; /* Azul oscuro */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b82f6; /* Azul vibrante */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px; /* Botones más redondos */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #3b82f6; /* Azul vibrante */
+    transform: translateX(5px);
+}
+
+/* Resaltar la sección activa */
+.sidebar nav ul li a.active {
+    background-color: #3b82f6; /* Azul vibrante */
+    color: #fff;
+}
+
+.sidebar nav ul li a i {
+    margin-right: 10px;
+}
+
+/* Contenido Principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9fafb; /* Fondo claro */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #1a1c23; /* Azul oscuro */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #1a1c23; /* Azul oscuro */
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Tarjetas */
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #1a1c23; /* Azul oscuro */
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #3b82f6; /* Azul vibrante */
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Botones */
+.btn {
+    background-color: #3b82f6; /* Azul vibrante */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px; /* Botones más redondos */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2563eb; /* Azul más oscuro */
+    transform: translateY(-2px);
+}
