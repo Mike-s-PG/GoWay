@@ -32,7 +32,7 @@ Puedes modificar los archivos HTML y CSS para adaptar el dashboard a tus necesid
 ![Rutas](assets/images/rotes.png)  
 *Captura de la página de rutas.*
 
-![Horarios](assets/images/horarios.png.png)  
+![Horarios](assets/images/horarios.png)  
 *Captura de la página de horarios.*
 
 ![Vehiculos](assets/images/vehiculos.png)  
