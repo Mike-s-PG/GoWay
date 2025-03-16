@@ -55,6 +55,7 @@ body {
 .sidebar nav ul li a:hover {
     background-color: #3b82f6; /* Azul vibrante */
     transform: translateX(5px);
+    font-weight: bold;
 }
 
 /* Resaltar la sección activa */
