@@ -42,7 +42,7 @@ body {
 }
 
 .logo h1 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     color: #1c1f24; /* Color del texto GoWay del logo */
     margin-right: auto; /*Para que el logo este alineado con los botones*/
@@ -216,7 +216,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #2563eb; /* Azul más oscuro */
+    background-color: #0660fe; /* Azul más oscuro */
     transform: translateY(-2px);
 }
 
