@@ -26,15 +26,26 @@ body {
     position: relative; /* Para posicionar el botón de cerrar sesión */
 }
 
-.sidebar .logo {
-    text-align: center;
+/* Estilos para el Logo */
+.logo {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    justify-content: center; /* Centra horizontalmente */
     margin-bottom: 30px;
 }
 
-.sidebar .logo h1 {
+.logo-img {
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: 40px; /* Ajusta el tamaño del logo */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+    margin-left: 5px; /* Espacio entre el logo y el margen izquierdo del panel */
+}
+
+.logo h1 {
     font-size: 24px;
     font-weight: bold;
     color: #3b82f6; /* Azul vibrante */
+    margin-right: auto; /*Para que el logo este alineado con los botones*/
 }
 
 .sidebar nav ul {
