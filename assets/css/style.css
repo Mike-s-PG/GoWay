@@ -81,8 +81,14 @@ body {
     color: #fff;
 }
 
-.sidebar nav ul li a i {
-    margin-right: 10px;
+.sidebar nav ul li a .icon {
+    width: 20px; /* Ajusta el tamaño del icono */
+    height: 20px; /* Ajusta el tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.sidebar nav ul li a:hover .icon {
+    filter: brightness(0) invert(1); /* Convierte el icono a blanco */
 }
 
 /* Botón de Cerrar Sesión */
