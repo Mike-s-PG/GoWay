@@ -102,12 +102,11 @@ body {
 .sidebar .logout-button a {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #61666c;
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
     border-radius: 15px;
-    background-color: #ef4444; /* Color rojo para el botón */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -115,10 +114,23 @@ body {
     background-color: #dc2626; /* Color rojo más oscuro al pasar el mouse */
     transform: translateX(5px); /* Desplazamiento hacia la derecha */
     font-weight: bold;
+    color: #fff;
 }
 
 .sidebar .logout-button a i {
     margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+/* Estilos para el ícono del botón de cerrar sesión */
+.sidebar .logout-button a .icon {
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: 20px; /* Ajusta el tamaño del ícono */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+/* Cambiar el color del ícono a blanco en hover */
+.sidebar .logout-button a:hover .icon {
+    filter: brightness(0) invert(1); /* Convierte el ícono a blanco */
 }
 
 /* ==================== */
