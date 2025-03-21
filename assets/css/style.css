@@ -45,7 +45,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #1c1f24; /* Color del texto GoWay del logo */
-    margin-right: auto; /*Para que el logo este alineado con los botones*/
+    margin-right: auto; /* Para que el logo esté alineado con los botones */
 }
 
 .sidebar nav ul {
@@ -220,9 +220,89 @@ body {
 }
 
 /* ==================== */
-/* Botones */
+/* Tabla General */
 /* ==================== */
-.btn {
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #3b82f6;
+    color: #fff;
+    font-weight: bold;
+}
+
+.data-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.data-table td {
+    color: #666;
+}
+
+/* Estilos para la celda de acciones */
+.data-table td:last-child {
+    display: flex;
+    gap: 8px; /* Espacio entre los botones */
+}
+
+/* Filas alternas */
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ==================== */
+/* Botones de Acción */
+/* ==================== */
+.btn-action {
+    background-color: #3b82f6; /* Azul vibrante */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px; /* Botones más redondos */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 5px;
+}
+
+.btn-action:hover {
+    background-color: #0660fe; /* Azul más oscuro */
+    transform: translateY(-2px);
+}
+
+.btn-edit {
+    background-color: #4CAF50; /* Verde */
+}
+
+.btn-edit:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+.btn-delete {
+    background-color: #f44336; /* Rojo */
+}
+
+.btn-delete:hover {
+    background-color: #e53935; /* Rojo más oscuro */
+}
+
+/* ==================== */
+/* Botón de Agregar */
+/* ==================== */
+.btn-add {
     background-color: #3b82f6; /* Azul vibrante */
     color: #fff;
     border: none;
@@ -231,119 +311,20 @@ body {
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
 }
 
-.btn:hover {
+.btn-add:hover {
     background-color: #0660fe; /* Azul más oscuro */
     transform: translateY(-2px);
 }
 
 /* ==================== */
-/* Estilos para Login y Registro */
+/* Responsividad */
 /* ==================== */
-
-.auth-container {
-    display: flex;
-    background-color: #fff;
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 800px;
-    width: 100%;
-    margin: 11rem auto; /* Centrar el contenedor */
-}
-
-.auth-form {
-    flex: 1; /* Ocupa la mitad del contenedor */
-    padding: 40px; /* Padding interno */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.auth-form h2 {
-    margin-bottom: 20px;
-    color: #1a1c23; /* Color oscuro */
-    text-align: center;
-}
-
-.auth-form .form-group {
-    margin-bottom: 15px;
-}
-
-.auth-form .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-.auth-form .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-}
-
-.auth-form .form-group .forgot-password {
-    float: right;
-    color: #3b82f6;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.auth-form .form-group .forgot-password:hover {
-    text-decoration: underline;
-}
-
-.auth-form .btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #3b82f6; /* Azul vibrante */
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-}
-
-.auth-form .btn:hover {
-    background-color: #2563eb; /* Azul más oscuro */
-    font-weight: bold;
-}
-
-.auth-form p {
-    margin-top: 15px;
-    text-align: center;
-    color: #666;
-}
-
-.auth-form a {
-    color: #3b82f6;
-    text-decoration: none;
-}
-
-.auth-form a:hover {
-    text-decoration: underline;
-}
-
-/* Imagen de fondo */
-.auth-image {
-    flex: 1; /* Ocupa la mitad del contenedor */
-    background-color: #3b82f6; /* Fondo gris claro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 40px;
-}
-
-.auth-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio */
+@media (max-width: 768px) {
+    .data-table {
+        display: block;
+        overflow-x: auto;
+    }
 }

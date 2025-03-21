@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conductores - Transporte Público</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -70,25 +73,56 @@
                 <h2>Gestión de Conductores</h2>
                 <div class="user-info">
                     <span>Admin</span>
-                    <img src="https://via.placeholder.com/40" alt="Usuario">
                 </div>
             </header>
 
             <section class="content">
                 <h3>Lista de Conductores</h3>
-                <div class="card">
-                    <h4>Conductor 1</h4>
-                    <p>Nombre: Juan Pérez</p>
-                    <p>Licencia: 123456</p>
-                </div>
-                <div class="card">
-                    <h4>Conductor 2</h4>
-                    <p>Nombre: María Gómez</p>
-                    <p>Licencia: 789012</p>
-                </div>
-                <button class="btn">Agregar Nuevo Conductor</button>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>RFC</th>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>No. Licencia</th>
+                            <th>Placas</th>
+                            <th>RFC Empresa</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RFC123456789</td>
+                            <td>Juan</td>
+                            <td>Pérez</td>
+                            <td>Gómez</td>
+                            <td>123456</td>
+                            <td>ABC123</td>
+                            <td>EMPRESA001</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>RFC987654321</td>
+                            <td>María</td>
+                            <td>Gómez</td>
+                            <td>López</td>
+                            <td>789012</td>
+                            <td>XYZ789</td>
+                            <td>EMPRESA002</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn-add">Agregar Nuevo Conductor</button>
             </section>
         </main>
     </div>
 </body>
-</html> 
+</html>
