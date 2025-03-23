@@ -70,23 +70,54 @@
                 <h2>Gestión de Rutas</h2>
                 <div class="user-info">
                     <span>Admin</span>
-                    <img src="https://via.placeholder.com/40" alt="Usuario">
                 </div>
             </header>
 
             <section class="content">
                 <h3>Lista de Rutas</h3>
-                <div class="card">
-                    <h4>Ruta 1</h4>
-                    <p>Origen: Centro</p>
-                    <p>Destino: Norte</p>
-                </div>
-                <div class="card">
-                    <h4>Ruta 2</h4>
-                    <p>Origen: Sur</p>
-                    <p>Destino: Este</p>
-                </div>
-                <button class="btn">Agregar Nueva Ruta</button>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Calle de salida</th>
+                            <th>Colonia de salida</th>
+                            <th>Calle de llegada</th>
+                            <th>Colonia de llegada</th>
+                            <th>Ciudad de llegada</th>
+                            <th>Tiempo de recorrido</th>
+                            <th>RFC de la empresa</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Av. Revolución</td>
+                            <td>Centro</td>
+                            <td>Calle Juárez</td>
+                            <td>Zona Rosa</td>
+                            <td>Ciudad de México</td>
+                            <td>25 minutos</td>
+                            <td>EMP123456789</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Blvd. López Mateos</td>
+                            <td>Las Palmas</td>
+                            <td>Av. Hidalgo</td>
+                            <td>San Ángel</td>
+                            <td>Guadalajara</td>
+                            <td>40 minutos</td>
+                            <td>EMP987654321</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn-add">Agregar nueva ruta</button>
             </section>
         </main>
     </div>

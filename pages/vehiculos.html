@@ -70,23 +70,51 @@
                 <h2>Gestión de Vehículos</h2>
                 <div class="user-info">
                     <span>Admin</span>
-                    <img src="https://via.placeholder.com/40" alt="Usuario">
                 </div>
             </header>
 
             <section class="content">
                 <h3>Lista de Vehículos</h3>
-                <div class="card">
-                    <h4>Vehículo 1</h4>
-                    <p>Placa: ABC-123</p>
-                    <p>Modelo: 2020</p>
-                </div>
-                <div class="card">
-                    <h4>Vehículo 2</h4>
-                    <p>Placa: XYZ-789</p>
-                    <p>Modelo: 2021</p>
-                </div>
-                <button class="btn">Agregar Nuevo Vehículo</button>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Número de serie</th>
+                            <th>Modelo</th>
+                            <th>Capacidad</th>
+                            <th>Año</th>
+                            <th>Marca</th>
+                            <th>RFC de la empresa</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IHGBH41JXMN109186</td>
+                            <td>Autobús</td>
+                            <td>50</td>
+                            <td>2020</td>
+                            <td>Mercedes-Benz</td>
+                            <td>EMP123456789</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5XYZU3LBXKG123456</td>
+                            <td>Combi</td>
+                            <td>16</td>
+                            <td>2018</td>
+                            <td>Toyota</td>
+                            <td>EMP987654321</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn-add">Agregar Nuevo Conductor</button>
             </section>
         </main>
     </div>
