@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportes - Transporte Público</title>
+    <title>Conductores - Transporte Público</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -91,23 +94,51 @@
         <!-- Contenido Principal -->
         <main class="main-content">
             <header class="header">
-                <h2>Reportes</h2>
+                <h2>Gestión de Empresas</h2>
                 <div class="user-info">
                     <span>Admin</span>
-                    <img src="https://via.placeholder.com/40" alt="Usuario">
                 </div>
             </header>
 
             <section class="content">
-                <h3>Generar Reportes</h3>
-                <div class="card">
-                    <h4>Reporte de Rutas</h4>
-                    <p>Descargar en PDF</p>
-                </div>
-                <div class="card">
-                    <h4>Reporte de Horarios</h4>
-                    <p>Descargar en Excel</p>
-                </div>
+                <h3>Lista de Empresas</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>RFC de la empresa</th>
+                            <th>Nombre</th>
+                            <th>Calle</th>
+                            <th>Colonia</th>
+                            <th>Ciudad</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EMP123456789</td>
+                            <td>Transportes Rápidos</td>
+                            <td>Av. Insurgentes</td>
+                            <td>San Rafael</td>
+                            <td>Ciudad de México</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EMP987654321</td>
+                            <td>Autobuses de Norte</td>
+                            <td>Blvd. López Mateos</td>
+                            <td>Las palmas</td>
+                            <td>Guadalajara</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn-add">Agregar nueva empresa</button>
             </section>
         </main>
     </div>

@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportes - Transporte Público</title>
+    <title>Conductores - Transporte Público</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -91,23 +94,48 @@
         <!-- Contenido Principal -->
         <main class="main-content">
             <header class="header">
-                <h2>Reportes</h2>
+                <h2>Gestión de Usuarios</h2>
                 <div class="user-info">
                     <span>Admin</span>
-                    <img src="https://via.placeholder.com/40" alt="Usuario">
                 </div>
             </header>
 
             <section class="content">
-                <h3>Generar Reportes</h3>
-                <div class="card">
-                    <h4>Reporte de Rutas</h4>
-                    <p>Descargar en PDF</p>
-                </div>
-                <div class="card">
-                    <h4>Reporte de Horarios</h4>
-                    <p>Descargar en Excel</p>
-                </div>
+                <h3>Lista de Usuarios</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID usuario</th>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Luis</td>
+                            <td>García</td>
+                            <td>Hernández</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sofía</td>
+                            <td>Martínez</td>
+                            <td>López</td>
+                            <td>
+                                <button class="btn-action btn-edit">Editar</button>
+                                <button class="btn-action btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn-add">Agregar nuevo usuario</button>
             </section>
         </main>
     </div>
