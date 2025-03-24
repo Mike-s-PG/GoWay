@@ -29,7 +29,7 @@ Puedes modificar los archivos HTML y CSS para adaptar el dashboard a tus necesid
 ![Dashboard](assets/images/dashboard.png)  
 *Captura de la página principal del dashboard.*
 
-![Rutas](assets/images/rotes.png)  
+![Rutas](assets/images/rutas.png)  
 *Captura de la página de rutas.*
 
 ![Horarios](assets/images/horarios.png)  
@@ -40,6 +40,15 @@ Puedes modificar los archivos HTML y CSS para adaptar el dashboard a tus necesid
 
 ![Conductores](assets/images/conductores.png)  
 *Captura de la página de conductores.*
+
+![Empresas](assets/images/empresas.png)  
+*Captura de la página de empresas.*
+
+![Checadores](assets/images/checadores.png)  
+*Captura de la página de checadores.*
+
+![Usuarios](assets/images/usuarios.png)  
+*Captura de la página de usuarios.*
 
 ![Reportes](assets/images/reportes.png)  
 *Captura de la página de reportes*
