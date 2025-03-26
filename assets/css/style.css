@@ -438,3 +438,16 @@ body {
     height: 100%;
     object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio */
 }
+
+/* ==================== */
+/* Estilos para las errores */
+/* ==================== */
+.error-message {
+    color: #d32f2f;
+    background-color: #fde8e8;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #d32f2f;
+    font-size: 14px;
+}
