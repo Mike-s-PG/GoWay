@@ -11,7 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verificar que los campos no estén vacíos
     if (empty($username) || empty($email) || empty($password) || empty($confirm_password) || empty($role_id)) {
-        echo "Todos los campos son obligatorios.";
+        //echo "Todos los campos son obligatorios.";
+        echo '<script>alert("Todos los campos son obligatorios."); window.location = "../pages/registro.php";</script>';
     } elseif ($password != $confirm_password) {
         echo "Las contraseñas no coinciden.";
     } else {
@@ -30,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             if ($conexion->query($query)) {
                 echo "Registro exitoso. Puedes iniciar sesión.";
+                header("location: ../index.php");// Redirigir al usuario a la página de inicio de sesión o login
             } else {
                 echo "Error en el registro.";
             }
