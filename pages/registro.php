@@ -10,7 +10,7 @@
     <div class="auth-container">
         <div class="auth-form">
             <h2>Registro</h2>
-            <form method="post" action="">
+            <form method="post" action="../config/login_registro.php">
                 <div class="form-group">
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" placeholder="Ingresa tu usuario" name="username">
@@ -34,7 +34,7 @@
                         <option value="3">Checador</option>
                     </select>
                 </div>
-                <button type="submit" class="btn">Registrarse</button>
+                <button type="submit" class="btn" >Registrarse</button>
             </form>
             <p>¿Ya tienes una cuenta? <a href="login.php">Inicia sesión</a></p>
         </div>
