@@ -81,7 +81,7 @@
 
             <!-- Botón de Cerrar Sesión -->
             <div class="logout-button">
-                <a href="pages/login.html" id="logout">
+                <a href="pages/login.php" id="logout">
                     <img src="assets/images/icons/icon_cerrar_sesion.png" alt="Cerrar sesión" class="icon"> 
                     <span>Cerrar sesión</span>
                 </a>
