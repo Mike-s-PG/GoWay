@@ -13,9 +13,10 @@
             
             <form method="post" action="" id="loginForm">
                 <?php
-                                        //session_start();
-                                            //include("../config/conexion_bd.php");
-                                            //include("../controllers/controlador.php");
+
+                session_start();
+                include("../config/conexion_bd.php");
+                include("../controllers/controlador.php");
                 
                 // Mostrar mensaje de error si existe
                 if (isset($_SESSION['error_message'])) {

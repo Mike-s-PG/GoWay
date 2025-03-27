@@ -1,11 +1,4 @@
 
-
-  //  $conexion = new mysqli('localhost', 'root', '', 'goway', "3306");
-  //  $conexion->set_charset('utf8');
-   // if($conexion){
-     //   echo "Conectado";
-   // };
-
 <?php 
 $conexion = new mysqli('localhost', 'root', '', 'goway', '3306');
 
