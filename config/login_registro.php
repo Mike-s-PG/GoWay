@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             if ($conexion->query($query)) {
                 echo "Registro exitoso. Puedes iniciar sesión.";
-                header("location: ../index.php");// Redirigir al usuario a la página de inicio de sesión o login
+                header("location: ../index.php");// Redirigir al usuario a la página de inicio de sesión o login 
             } else {
                 echo "Error en el registro.";
             }

@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html">
+                        <a href="/index.php">
                             <img src="assets/images/icons/icon_dashboard.png" alt="Dashboard" class="icon">
                             <span>Dashboard</span>
                         </a>

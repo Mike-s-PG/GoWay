@@ -94,7 +94,7 @@ body {
 /* Botón de Cerrar Sesión */
 .sidebar .logout-button {
     position: absolute; /* Posiciona el botón en la parte inferior */
-    bottom: 20px;
+    bottom: -15px;
     left: 20px;
     width: 250px; /* Ancho del menú lateral */
 }
